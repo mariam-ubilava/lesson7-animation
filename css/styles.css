@@ -1,0 +1,128 @@
+
+.bg-image{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+
+}
+
+.meditate {
+	width: 200px;
+	height: 200px;
+	z-index: 12;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: meditate 0.5s infinite;
+}
+.mandala{
+	width: 350px;
+	height: 300px;
+	z-index: 11;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: turnaround 9s infinite;
+}
+
+.astronaut{
+	width: 100px;
+	height: 80px;
+	z-index: 10;
+	position: absolute;
+	transform: translate(90px, 80px);
+	animation: falling 9s infinite;
+}
+.protest {
+	width: 100px;
+	height: 80px;
+	z-index: 10;
+	position: absolute;
+	transform: translate(360px, 300px);
+	animation:marching 0.5s infinite;
+}
+.virus{
+	width: 100px;
+	height: 80px;
+	position: absolute;
+	transform: translate(860px, 150px);
+	z-index: 10;
+	animation: catch 0.5s infinite;
+}
+.building {
+	width: 100px;
+	height: 80px;
+	position: absolute;
+	transform: translate(1060px, 250px);
+	z-index: 10;
+	animation: shake 0.5s infinite;
+
+}
+
+h1 {
+	z-index: 10;
+	position: absolute;
+	color: purple;
+	animation: movetext 9s infinite;
+	font-size: 24px;
+	text-shadow:  2px 2px white;
+}
+
+/*animation*/
+
+@keyframes meditate{
+	from {top: 45%}
+	to  {top: 44.9%}
+
+}
+@keyframes turnaround {
+	0% {transform: translate(-50%,-50%) rotate(45deg);}
+	25% {transform: translate(-50%,-50%) rotate(90deg);}
+	50% {transform: translate(-50%,-50%) rotate(180deg);}
+	75% {transform: translate(-50%,-50%) rotate(360deg);}
+	100% {transform: translate(-50%,-50%) rotate(45deg);}
+}
+
+@keyframes falling{
+	0% {transform: translate(90px, 80px) rotate(0deg);}
+	25%{transform: translate(135px, 150px) rotate(90deg);}
+	50%{transform: translate(100px, 200px) rotate(180deg);}
+	75%{transform: translate(150px, 300px) rotate(360deg);}
+	100%{transform: translate(90px, 450px) rotate(10deg);}
+}
+
+@keyframes marching{
+	0% {transform: translate(360px, 300px) scale(1.3);}
+	30% {transform: translate(360px, 325px) scale(1.5);}
+	50% {transform: translate(360px, 350px) scale(1.7);}
+	80% {transform: translate(360px, 375px) scale(1.9);}
+	100%{transform: translate(360px, 400px) scale(2);}
+}
+
+@keyframes catch{
+	from {top:16px;}
+	to {left: 126px;}
+}
+
+@keyframes shake{
+	0% {transform: translate(1060px, 250px) rotate(15deg);}
+	50% {transform: translate(1060px, 250px) rotate(0deg);}
+	70%{transform: translate(1060px, 250px) scale(1.5);}
+	100% {transform: translate(1060px, 250px) scale(2);}
+}
+
+@keyframes movetext{
+	0% {transform: translate(50px, 20px);}
+	10% {transform: translate(150px, 20px);}
+	20% {transform: translate(250px, 20px);}
+	30% {transform: translate(350px, 20px);}
+	40% {transform: translate(450px, 20px);}
+	50% {transform: translate(550px, 20px);}
+	60% {transform: translate(650px, 20px);}
+	70% {transform: translate(750px, 20px);}
+	80% {transform: translate(850px, 20px);}
+	100% {transform: translate(950px, 20px);}
+}
